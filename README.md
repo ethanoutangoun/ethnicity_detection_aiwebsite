@@ -13,3 +13,4 @@ Moving forward:
 - Display ethnicity in tab
 - Create options to detect using just face or just name
 - Improve and modernize UI
+- Deploy website using a web service that supports Flask
