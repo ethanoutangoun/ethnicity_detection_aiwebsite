@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>File Uploaded</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f1f1f1;
+            padding: 30px;
+            text-align: center;
+        }
+
+        img {
+            max-width: 20%;
+            height: auto;
+            text-align: center;
+        }
+
+      
+    </style>
+</head>
+<body>
+    <h2>Hello {{ name }}, this is your cropped image:</h2>
+    <img src="{{ url_for('send_file', filename=filename) }}" alt="Cropped image">
+   
+</body>
+</html>
