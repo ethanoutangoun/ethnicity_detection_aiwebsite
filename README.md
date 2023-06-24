@@ -7,10 +7,11 @@ So far:
 - Set up website using flask as the backend
 - Simple html design that prompts user for name and to upload and image of a face
 - After a succesful upload and facial detection, displays cropped face on screen
+- Implemented Clarifai to detect face
+- Display ethnicity in tab
 
 Moving forward:
-- Implement Namsor and Clarifai API to detect ethnicity
-- Display ethnicity in tab
+- Combine Clarifai with Namsor for prediction
 - Create options to detect using just face or just name
 - Improve and modernize UI
 - Deploy website using a web service that supports Flask
