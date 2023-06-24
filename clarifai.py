@@ -151,7 +151,7 @@ def process_input(inp):
 
 # Runs the program.
 def main():
-    file = open('/Users/eoutangoun/Documents/aiwebsite/uploads/output.csv')
+    file = open('./uploads/output.csv')
     reader = csv.reader(file)
     next(reader)
     process_input(reader)
