@@ -1,12 +1,21 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>File Uploader</title>
+    <title>Ethnicity Predictor</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             background-color: #f1f1f1;
             padding: 30px;
+            margin: 0;
+        }
+
+
+        .page-header {
+            text-align: center;
+            font-size: 2.5em;
+            color: #5B2C6F; /* Adjusted the color */
+            margin-top: 30px;
         }
 
         form {
@@ -15,39 +24,58 @@
             border-radius: 15px;
             box-shadow: 0px 10px 25px rgba(0,0,0,0.1);
             width: 60%;
+            margin: 20px auto; /* Updated this line */
+            display: block; /* Updated this line */
         }
 
-        input[type="text"], input[type="file"] {
+        .input-group {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+
+        .input-group input[type="text"] {
+            width: 48%; /* Updated this line */
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            box-shadow: 0px 0px 15px rgba(0,0,0,0.1);
+          
+        }
+
+        input[type="file"] {
             width: 100%;
             padding: 10px;
             border: none;
             border-radius: 5px;
             box-shadow: 0px 0px 15px rgba(0,0,0,0.1);
             margin-bottom: 10px;
-            width: 60%;
         }
 
         input[type="submit"] {
-            background-color: #007AFF;
+            background-color: #7D3C98; /* Adjusted the color */
             color: #fff;
             padding: 10px 20px;
             border: none;
             border-radius: 5px;
             cursor: pointer;
-            width: 60%;
         }
 
         input[type="submit"]:hover {
-            background-color: #0056b3;
+            background-color: #5B2C6F; /* Adjusted the hover color */
         }
     </style>
 </head>
 <body>
-    <form action = "/uploader" method = "POST" enctype = "multipart/form-data">
-        <input type = "text" name = "firstName" placeholder = "First name" required>
-        <input type = "text" name = "lastName" placeholder = "Last name" required>
-        <input type = "file" name = "file" required>
-        <input type = "submit" value = "Upload">
+    <h1 class="page-header">Ethnicity Predictor</h1>
+
+    <form action="/uploader" method="POST" enctype="multipart/form-data">
+        <div class="input-group">
+            <input type="text" name="firstName" placeholder="First name" required>
+            <input type="text" name="lastName" placeholder="Last name" required>
+        </div>
+        <input type="file" name="file" required>
+        <input type="submit" value="Predict Ethnicity">
     </form>
 </body>
 </html>

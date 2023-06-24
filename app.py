@@ -42,7 +42,7 @@ def upload_file_post():
 
 
       #return 'Hello {}, file {} uploaded successfully'.format(name, filename)
-      return render_template('uploaded.html', firstName=firstName, lastName = lastName, race = race, filename="cropped.jpg")
+      return render_template('uploaded.html', firstName=firstName, lastName = lastName, race = race, filename=filename)
 
 
 @app.route('/uploads/<filename>')

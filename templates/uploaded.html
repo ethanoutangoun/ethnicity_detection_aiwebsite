@@ -20,7 +20,7 @@
     </style>
 </head>
 <body>
-    <h2>Hello {{ firstName }} {{ lastName }}, this is your cropped image:</h2>
+    <h2>Hello {{ firstName }} {{ lastName }}</h2>
     <img src="{{ url_for('send_file', filename=filename) }}" alt="Cropped image">
     <h2>Your predicted race is {{ race }}</h2>
    
