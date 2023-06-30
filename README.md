@@ -14,4 +14,4 @@ Moving forward:
 - Combine Clarifai with Namsor for prediction
 - Create options to detect using just face or just name
 - Improve and modernize UI
-- Deploy website using a web service that supports Flask
+
