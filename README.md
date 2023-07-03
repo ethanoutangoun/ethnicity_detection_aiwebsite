@@ -11,7 +11,7 @@ So far:
 - Display ethnicity in tab
 
 Moving forward:
-- Combine Clarifai with Namsor for prediction
+- Use combined algorithm with Clarifai with Namsor for prediction
 - Create options to detect using just face or just name
 - Improve and modernize UI
 
