@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 <html>
 <head>
     
@@ -71,6 +71,19 @@
         input[type="submit"]:hover {
             background-color: #5B2C6F; /* Adjusted the hover color */
         }
+
+        .checkbox-group {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+            font-family: 'Inter', Arial, sans-serif;
+            font-size: small;
+
+        }
+
+        .checkbox-group input[type="checkbox"] {
+            margin-right: 10px;
+        }
     </style>
 </head>
 <body>
@@ -83,7 +96,12 @@
             <input type="text" name="lastName" placeholder="Last name" required>
         </div>
         
-        <input type="file" name="file"  required>
+        <div class="checkbox-group">
+            <input type="checkbox" name="useName" id="useNameCheckbox">
+            <label for="useNameCheckbox">Use my name in the ethnicity prediction algorithm</label>
+        </div>
+        
+        <input type="file" name="file" required>
         <input type="submit" value="Predict Ethnicity">
     </form>
 </body>
